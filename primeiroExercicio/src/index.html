@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../public/css/style.css" />
 
     <title>Tela de Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <div class="cabecalho">
-                <h1>Login Sistema Acadêmico</h1>
+      <header>
+        <div class="cabecalho">
+          <h1>Login Sistema Acadêmico</h1>
+        </div>
+      </header>
+
+      <main>
+        <div class="login">
+          <h1>SISTEMA</h1>
+
+          <form action="./pagina2.html" method="post">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-block"
+              placeholder="Digite seu e-mail"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="input-block"
+              placeholder="Digite sua senha"
+              required
+            />
+            <div class="input-button">
+              <input type="submit" value="Logar" />
+
+              <a href="https://www.google.com.br">Esqueci minha senha</a>
             </div>
-        </header>
+          </form>
+        </div>
 
-        <main>
-            <div class="login">
-                <h1>SISTEMA</h1>
-
-                <form action="./pagina2.html" method="post">
-                    <fieldset>
-                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
-
-
-                        <!-- <a href="./pagina2.html">Logar</a> -->
-                        <input type="submit" value="Logar">
-                        
-                        <a href="https://www.google.com.br">Esqueci minha senha</a>
-                    </fieldset>
-                </form>
-            </div>
-
-            <div class="banner">
-                <a href="https://www.mercadolivre.com.br/" target="_blank">
-                    <img src="../public/images/LPIV - 4.5 - HTML - Mercado Livre.jpg" alt="Imagem do mercádo pago">
-                </a>
-            </div>
-        </main>
+        <div class="banner">
+          <a href="https://www.mercadolivre.com.br/" target="_blank">
+            <img
+              src="../public/images/LPIV-4.5-HTML-MercadoLivre.jpg"
+              alt="Imagem do mercádo pago"
+            />
+          </a>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
